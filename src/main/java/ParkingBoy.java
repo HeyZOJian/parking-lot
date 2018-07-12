@@ -27,6 +27,7 @@ public class ParkingBoy {
 	}
 
 	public Car unpark(Receipt receipt) {
+		System.out.println(receipt.getParkingLotName());
 		Car car = null;
 		for (ParkingLot parkingLot:parkingLots){
 			if(parkingLot.getName().equals(receipt.getParkingLotName())){

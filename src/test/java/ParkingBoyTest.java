@@ -65,9 +65,9 @@ public class ParkingBoyTest {
 	}
 
 	@Test
-	public void should_unpark_successfully_when_unpark_the_car(){
-		ParkingLot parkingLot1 = new ParkingLot("No.1",1);
-		ParkingLot parkingLot2 = new ParkingLot("No.2",1);
+	public void should_unpark_successfully_when_unpark_the_car() {
+		ParkingLot parkingLot1 = new ParkingLot("No.1", 1);
+		ParkingLot parkingLot2 = new ParkingLot("No.2", 1);
 		List<ParkingLot> parkingLots = new ArrayList<>();
 		parkingLots.add(parkingLot1);
 		parkingLots.add(parkingLot2);
@@ -77,8 +77,24 @@ public class ParkingBoyTest {
 		try {
 			Receipt receipt = parkingBoy.park(car);
 			Car unparkCar = parkingBoy.unpark(receipt);
-			assertThat(unparkCar,is(car));
-		}catch (WrongReceiptException e){
+			assertThat(unparkCar, is(car));
+		} catch (WrongReceiptException e) {
+		}
+	}
+
+	@Test
+	public void should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt() {
+		ParkingLot parkingLot1 = new ParkingLot("No.1", 1);
+		ParkingLot parkingLot2 = new ParkingLot("No.2", 1);
+		List<ParkingLot> parkingLots = new ArrayList<>();
+		parkingLots.add(parkingLot1);
+		parkingLots.add(parkingLot2);
+		ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+		try {
+			Receipt receipt = new Receipt("No.3");
+			Car unparkCar = parkingBoy.unpark(receipt);
+			fail("should_unpark_failed");
+		} catch (WrongReceiptException e) {
 		}
 	}
 }
