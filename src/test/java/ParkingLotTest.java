@@ -116,6 +116,22 @@ public class ParkingLotTest {
 	    }catch (ParkingLotFullException e){
 
 	    }
-
     }
+	@Test
+	public void should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park(){
+		ParkingLot parkingLot1 = new ParkingLot("No.1",0);
+		ParkingLot parkingLot2 = new ParkingLot("No.2",1);
+		List<ParkingLot> parkingLots = new ArrayList<>();
+		parkingLots.add(parkingLot1);
+		parkingLots.add(parkingLot2);
+		ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+		Car car = new Car();
+
+		try {
+			Receipt receipt = parkingBoy.park(car);
+			assertThat(receipt.getParkingLotName(),is("No.2"));
+		}catch (ParkingLotFullException e){
+
+		}
+	}
 }

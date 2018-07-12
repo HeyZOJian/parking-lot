@@ -2,16 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3fe3ddbc-68d8-49e8-8069-1aa6f6879b38" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/out/production/classes/ParkingBoy.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/ParkingBoy.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/ParkingLot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/ParkingLot.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Receipt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Receipt.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/test/classes/ParkingLotTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ParkingLotTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/ParkingLot.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/ParkingLot.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Receipt.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Receipt.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/ParkingLotTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ParkingLotTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -34,8 +27,8 @@
       <file leaf-file-name="ParkingLotTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="325">
-              <caret line="109" column="60" lean-forward="true" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+            <state relative-caret-position="336">
+              <caret line="126" column="60" selection-start-line="126" selection-start-column="60" selection-end-line="126" selection-end-column="60" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -543,7 +536,7 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -565,7 +558,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingLotTest.should_park_in_park1_successfully_when_park1_can_park_given_two_park">
+  <component name="RunManager" selected="JUnit.ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -620,13 +613,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingLotTest.should_park_failed_given_parking_lot_is_full" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.should_park_in_park1_successfully_when_park1_can_park_given_two_park" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkingLotTest" />
-      <option name="METHOD_NAME" value="should_park_failed_given_parking_lot_is_full" />
+      <option name="METHOD_NAME" value="should_park_in_park1_successfully_when_park1_can_park_given_two_park" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -637,13 +630,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingLotTest.should_park_in_park1_successfully_when_park1_can_park_given_two_park" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkingLotTest" />
-      <option name="METHOD_NAME" value="should_park_in_park1_successfully_when_park1_can_park_given_two_park" />
+      <option name="METHOD_NAME" value="should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -693,19 +686,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParkingLotTest.should_park_failed_given_parking_lot_is_full" />
       <item itemvalue="JUnit.ParkingLotTest.should_get_specific_car_when_call_unPark_given_receipt_is_right" />
       <item itemvalue="JUnit.ParkingLotTest.should_not_get_specific_car_when_call_unPark_given_receipt_is_wrong" />
       <item itemvalue="JUnit.ParkingLotTest" />
       <item itemvalue="JUnit.ParkingLotTest.should_park_in_park1_successfully_when_park1_can_park_given_two_park" />
+      <item itemvalue="JUnit.ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" />
         <item itemvalue="JUnit.ParkingLotTest.should_park_in_park1_successfully_when_park1_can_park_given_two_park" />
         <item itemvalue="JUnit.ParkingLotTest" />
         <item itemvalue="JUnit.ParkingLotTest.should_not_get_specific_car_when_call_unPark_given_receipt_is_wrong" />
         <item itemvalue="JUnit.ParkingLotTest.should_get_specific_car_when_call_unPark_given_receipt_is_right" />
-        <item itemvalue="JUnit.ParkingLotTest.should_park_failed_given_parking_lot_is_full" />
       </list>
     </recent_temporary>
   </component>
@@ -721,20 +714,11 @@
       <updated>1531289642752</updated>
       <workItem from="1531289644227" duration="8218000" />
       <workItem from="1531355750941" duration="598000" />
-      <workItem from="1531364265215" duration="1334000" />
+      <workItem from="1531364265215" duration="1688000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParkingLotTest_should_park_failed_given_parking_lot_is_full - 2018.07.11 at 16h 18m 01s.xml">
-      <configuration name="ParkingLotTest.should_park_failed_given_parking_lot_is_full" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParkingLotTest_should_park_failed_given_parking_lot_is_full - 2018.07.11 at 16h 20m 41s.xml">
-      <configuration name="ParkingLotTest.should_park_failed_given_parking_lot_is_full" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="ParkingLotTest_should_park_failed_given_parking_lot_is_full - 2018.07.11 at 16h 23m 27s.xml">
-      <configuration name="ParkingLotTest.should_park_failed_given_parking_lot_is_full" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="ParkingLotTest_should_get_specific_car_when_call_unPark_given_receipt_is_right - 2018.07.11 at 16h 23m 30s.xml">
       <configuration name="ParkingLotTest.should_get_specific_car_when_call_unPark_given_receipt_is_right" configurationId="JUnit" />
     </history-entry>
@@ -756,9 +740,18 @@
     <history-entry file="ParkingLotTest_should_park_in_park1_successfully_when_park1_can_park_given_two_park - 2018.07.12 at 11h 19m 23s.xml">
       <configuration name="ParkingLotTest.should_park_in_park1_successfully_when_park1_can_park_given_two_park" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="ParkingLotTest_should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park - 2018.07.12 at 11h 23m 37s.xml">
+      <configuration name="ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotTest_should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park - 2018.07.12 at 11h 23m 42s.xml">
+      <configuration name="ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="ParkingLotTest_should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park - 2018.07.12 at 11h 23m 47s.xml">
+      <configuration name="ParkingLotTest.should_park_in_park2_successfully_when_park1_is_full_and_park2_is_not_full_park_given_two_park" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10150000" />
+    <option name="totallyTimeSpent" value="10504000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -770,11 +763,11 @@
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33407325" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.33407325" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.30299667" />
       <window_info id="Designer" order="2" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.198174" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.198174" />
       <window_info anchor="right" id="Database" order="3" />
       <window_info id="Learn" order="2" />
       <window_info anchor="right" id="Gradle" order="3" />
@@ -976,8 +969,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="109" column="60" lean-forward="true" selection-start-line="109" selection-start-column="60" selection-end-line="109" selection-end-column="60" />
+        <state relative-caret-position="336">
+          <caret line="126" column="60" selection-start-line="126" selection-start-column="60" selection-end-line="126" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
