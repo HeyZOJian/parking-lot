@@ -29,15 +29,14 @@ public class ParkingBoy {
 	public Car unpark(Receipt receipt) {
 		System.out.println(receipt.getParkingLotName());
 		Car car = null;
-		for (ParkingLot parkingLot:parkingLots){
-			if(parkingLot.getName().equals(receipt.getParkingLotName())){
+		for (ParkingLot parkingLot : parkingLots) {
+			if (parkingLot.getName().equals(receipt.getParkingLotName())) {
 				car = parkingLot.unPark(receipt);
 			}
 		}
-		if(car == null){
+		if (car == null) {
 			throw new WrongReceiptException();
-		}
-		else {
+		} else {
 			return car;
 		}
 	}
