@@ -78,7 +78,7 @@ public class ParkingBoyTest {
 			Receipt receipt = parkingBoy.park(car);
 			Car unparkCar = parkingBoy.unpark(receipt);
 			assertThat(unparkCar,is(car));
-		}catch (ParkingLotFullException e){
+		}catch (WrongReceiptException e){
 		}
 	}
 }

@@ -27,6 +27,17 @@ public class ParkingBoy {
 	}
 
 	public Car unpark(Receipt receipt) {
-		return null;
+		Car car = null;
+		for (ParkingLot parkingLot:parkingLots){
+			if(parkingLot.getName().equals(receipt.getParkingLotName())){
+				car = parkingLot.unPark(receipt);
+			}
+		}
+		if(car == null){
+			throw new WrongReceiptException();
+		}
+		else {
+			return car;
+		}
 	}
 }
