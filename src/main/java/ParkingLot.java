@@ -9,7 +9,7 @@ public class ParkingLot {
 	private int capacity;
 	private Map<Receipt,Car> parkSpaces = new HashMap<>();
 
-	public ParkingLot(String name, int capacity) {
+	public ParkingLot(int capacity) {
 		this.name = name;
 		this.capacity = capacity;
 	}
@@ -17,7 +17,7 @@ public class ParkingLot {
 	public Receipt park(Car car) {
 		if(isFull()) throw new ParkingLotFullException();
 		else{
-			Receipt receipt = new Receipt(this.name);
+			Receipt receipt = new Receipt();
 			parkSpaces.put(receipt,car);
 			return receipt;
 		}

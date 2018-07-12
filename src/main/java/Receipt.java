@@ -4,7 +4,7 @@
 public class Receipt {
 	private String parkingLotName;
 
-	public Receipt(String parkingLotName) {
+	public Receipt() {
 		this.parkingLotName = parkingLotName;
 	}
 
