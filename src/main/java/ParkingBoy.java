@@ -11,23 +11,22 @@ public class ParkingBoy {
 		this.parkingLots = parkingLots;
 	}
 
-	public Receipt park(Car car){
+	public Receipt park(Car car) {
 		Receipt receipt = null;
-		for(ParkingLot parkingLot: parkingLots){
-			if(!parkingLot.isFull()){
+		for (ParkingLot parkingLot : parkingLots) {
+			if (!parkingLot.isFull()) {
 				receipt = parkingLot.park(car);
 				break;
 			}
 		}
-		if(receipt==null){
+		if (receipt == null) {
 			throw new ParkingLotFullException();
-		}
-		else{
+		} else {
 			return receipt;
 		}
 	}
 
-	public Car unpark(Receipt receipt){
+	public Car unpark(Receipt receipt) {
 		return null;
 	}
 }
