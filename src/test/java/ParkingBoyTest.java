@@ -1,4 +1,5 @@
 import org.junit.Test;
+import org.junit.jupiter.api.BeforeEach;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
@@ -7,6 +8,8 @@ import java.util.List;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 import static org.junit.Assert.fail;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.when;
 
 /**
  * Created by Vito Zhuang on 7/12/2018.
@@ -15,7 +18,8 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_park_successfully_when_park_is_not_full_given_one_park() {
-		ParkingLot parkingLot1 = new ParkingLot(1);
+		ParkingLot parkingLot1 = mock(ParkingLot.class);
+		when(parkingLot1.isFull()).thenReturn(false);
 		List<ParkingLot> parkingLots = new LinkedList<>();
 		parkingLots.add(parkingLot1);
 		ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
@@ -43,8 +47,10 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_park_successfully_when_park_are_not_full_at_least_one_given_two_park() {
-		ParkingLot parkingLot1 = new ParkingLot(1);
-		ParkingLot parkingLot2 = new ParkingLot(1);
+		ParkingLot parkingLot1 = mock(ParkingLot.class);
+		ParkingLot parkingLot2 = mock(ParkingLot.class);
+		when(parkingLot1.isFull()).thenReturn(false);
+		when(parkingLot2.isFull()).thenReturn(false);
 		List<ParkingLot> parkingLots = new ArrayList<>();
 		parkingLots.add(parkingLot1);
 		parkingLots.add(parkingLot2);
@@ -75,7 +81,7 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_park_in_orderly_when_parkingBoy_manage_two_park() {
-		ParkingLot parkingLot1 = new ParkingLot(1);
+		ParkingLot  parkingLot1 = new ParkingLot(1);
 		ParkingLot parkingLot2 = new ParkingLot(1);
 		List<ParkingLot> parkingLots = new ArrayList<>();
 		parkingLots.add(parkingLot1);
@@ -95,8 +101,10 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_park_failed_when_park1_and_park2_are_full_park_given_two_park() {
-		ParkingLot parkingLot1 = new ParkingLot(0);
-		ParkingLot parkingLot2 = new ParkingLot(0);
+		ParkingLot  parkingLot1 = mock(ParkingLot.class);
+		ParkingLot parkingLot2 = mock(ParkingLot.class);
+		when(parkingLot1.isFull()).thenReturn(true);
+		when(parkingLot2.isFull()).thenReturn(true);
 		List<ParkingLot> parkingLots = new ArrayList<>();
 		parkingLots.add(parkingLot1);
 		parkingLots.add(parkingLot2);
@@ -112,7 +120,7 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt() {
-		ParkingLot parkingLot1 = new ParkingLot(1);
+		ParkingLot  parkingLot1 = new ParkingLot(1);
 		ParkingLot parkingLot2 = new ParkingLot(1);
 		List<ParkingLot> parkingLots = new ArrayList<>();
 		parkingLots.add(parkingLot1);
