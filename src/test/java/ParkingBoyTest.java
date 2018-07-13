@@ -145,8 +145,10 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt() {
-		ParkingLot parkingLot1 = new ParkingLot(1);
-		ParkingLot parkingLot2 = new ParkingLot(1);
+		ParkingLot parkingLot1 = mock(ParkingLot.class);
+		ParkingLot parkingLot2 = mock(ParkingLot.class);
+		when(parkingLot1.isFull()).thenReturn(false);
+		when(parkingLot2.isFull()).thenReturn(false);
 		List<ParkingLot> parkingLots = new ArrayList<>();
 		parkingLots.add(parkingLot1);
 		parkingLots.add(parkingLot2);

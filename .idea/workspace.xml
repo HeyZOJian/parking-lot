@@ -627,9 +627,26 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.ParkingBoyTest.should_park_in_orderly_when_parkingBoy_manage_two_park">
+  <component name="RunManager" selected="JUnit.ParkingBoyTest">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration name="ParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="ParkingBoyTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
     </configuration>
     <configuration name="ParkingBoyTest.should_park_failed_when_park1_and_park2_are_full_park_given_two_park" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
@@ -665,30 +682,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingBoyTest.should_park_successfully_when_park_are_not_full_at_least_one_given_two_park" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ParkingBoyTest.should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="ParkingBoyTest" />
-      <option name="METHOD_NAME" value="should_park_successfully_when_park_are_not_full_at_least_one_given_two_park" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ParkingBoyTest.should_unpark_successfully_when_parkingBoy_manage_one_park" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-lot_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingBoyTest" />
-      <option name="METHOD_NAME" value="should_unpark_successfully_when_parkingBoy_manage_one_park" />
+      <option name="METHOD_NAME" value="should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -755,19 +755,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParkingBoyTest.should_unpark_successfully_when_parkingBoy_manage_one_park" />
       <item itemvalue="JUnit.ParkingBoyTest.should_unpark_successfully_when_parkingBoy_manage_two_park" />
-      <item itemvalue="JUnit.ParkingBoyTest.should_park_successfully_when_park_are_not_full_at_least_one_given_two_park" />
       <item itemvalue="JUnit.ParkingBoyTest.should_park_failed_when_park1_and_park2_are_full_park_given_two_park" />
       <item itemvalue="JUnit.ParkingBoyTest.should_park_in_orderly_when_parkingBoy_manage_two_park" />
+      <item itemvalue="JUnit.ParkingBoyTest.should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt" />
+      <item itemvalue="JUnit.ParkingBoyTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ParkingBoyTest" />
+        <item itemvalue="JUnit.ParkingBoyTest.should_unpark_failed_when_unpark_the_car_given_the_wrong_receipt" />
         <item itemvalue="JUnit.ParkingBoyTest.should_park_in_orderly_when_parkingBoy_manage_two_park" />
         <item itemvalue="JUnit.ParkingBoyTest.should_park_failed_when_park1_and_park2_are_full_park_given_two_park" />
         <item itemvalue="JUnit.ParkingBoyTest.should_unpark_successfully_when_parkingBoy_manage_two_park" />
-        <item itemvalue="JUnit.ParkingBoyTest.should_unpark_successfully_when_parkingBoy_manage_one_park" />
-        <item itemvalue="JUnit.ParkingBoyTest.should_park_successfully_when_park_are_not_full_at_least_one_given_two_park" />
       </list>
     </recent_temporary>
   </component>
