@@ -2,6 +2,7 @@ import java.util.ArrayList;
 import java.util.Comparator;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by Vito Zhuang on 7/12/2018.
@@ -18,7 +19,7 @@ public class ParkingBoy {
 		return parkingLot.park(car);
 	}
 
-	public Car unpark(Receipt receipt) {
+	public Car unPark(Receipt receipt) {
 		Car car = null;
 		for (ParkingLot parkingLot : parkingLots) {
 			car = parkingLot.unPark(receipt);
@@ -27,9 +28,8 @@ public class ParkingBoy {
 		}
 		if (car == null) {
 			throw new WrongReceiptException();
-		} else {
-			return car;
 		}
+		return car;
 	}
 
 
