@@ -1,8 +1,9 @@
-import java.util.ArrayList;
-import java.util.Comparator;
+package Model;
+
+import Expection.ParkingLotFullException;
+
 import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by Vito Zhuang on 7/12/2018.

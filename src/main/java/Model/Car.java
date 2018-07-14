@@ -1,9 +1,7 @@
-import java.util.UUID;
+package Model;
 
 /**
  * Created by Vito Zhuang on 7/11/2018.
  */
-public class Receipt {
-
-
+public class Car {
 }

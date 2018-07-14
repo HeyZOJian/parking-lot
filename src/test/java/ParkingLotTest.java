@@ -1,6 +1,8 @@
+import Model.Car;
+import Model.ParkingLot;
+import Expection.ParkingLotFullException;
+import Model.Receipt;
 import org.junit.Test;
-
-import java.util.UUID;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;

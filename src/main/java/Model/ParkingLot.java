@@ -1,13 +1,16 @@
+package Model;
+
+import Expection.ParkingLotFullException;
+
 import java.util.HashMap;
 import java.util.Map;
-import java.util.UUID;
 
 /**
  * Created by Vito Zhuang on 7/11/2018.
  */
 public class ParkingLot {
 	private int capacity;
-	private Map<Receipt,Car> parkSpaces = new HashMap<>();
+	private Map<Receipt, Car> parkSpaces = new HashMap<>();
 
 	public ParkingLot(int capacity) {
 		this.capacity = capacity;
