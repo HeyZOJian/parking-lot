@@ -1,6 +1,7 @@
 package Model;
 
 import Expection.ParkingLotFullException;
+import Expection.WrongReceiptException;
 
 import java.util.LinkedList;
 import java.util.List;
@@ -20,10 +21,10 @@ public class ParkingBoy {
 		return parkingLot.park(car);
 	}
 
-	public Car unPark(Receipt receipt) {
+	public Car unPark(String uuid) {
 		Car car = null;
 		for (ParkingLot parkingLot : parkingLots) {
-			car = parkingLot.unPark(receipt);
+			car = parkingLot.unPark(uuid);
 			if (car != null)
 				break;
 		}

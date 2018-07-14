@@ -4,6 +4,8 @@ import Expection.ParkingLotFullException;
 import Model.Receipt;
 import org.junit.Test;
 
+import java.util.UUID;
+
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.CoreMatchers.not;
 import static org.junit.Assert.assertThat;
@@ -16,7 +18,7 @@ public class ParkingLotTest {
 		ParkingLot parkingLot = new ParkingLot(1);
 
 		try {
-			parkingLot.park(new Car());
+			parkingLot.park(new Car("粤C99999"));
 		} catch (ParkingLotFullException exception) {
 			fail("should park successfully");
 		}
@@ -29,7 +31,7 @@ public class ParkingLotTest {
 		ParkingLot parkingLot = new ParkingLot(0);
 
 		try {
-			parkingLot.park(new Car());
+			parkingLot.park(new Car("粤C99999"));
 			fail("should park successfully");
 		} catch (ParkingLotFullException exception) {
 
@@ -41,10 +43,10 @@ public class ParkingLotTest {
 	public void should_get_specific_car_when_call_unPark_given_receipt_is_right() {
 		ParkingLot parkingLot = new ParkingLot(1);
 
-		Car theCar = new Car();
+		Car theCar = new Car("粤C99999");
 		Receipt receipt = parkingLot.park(theCar);
 
-		assertThat(parkingLot.unPark(receipt), is(theCar));
+		assertThat(parkingLot.unPark(receipt.getUuid()), is(theCar));
 
 	}
 
@@ -52,12 +54,12 @@ public class ParkingLotTest {
 	public void should_not_get_specific_car_when_call_unPark_given_receipt_is_wrong() {
 		ParkingLot parkingLot = new ParkingLot(1);
 
-		Car theCar = new Car();
+		Car theCar = new Car("粤C99999");
 		Receipt receipt = parkingLot.park(theCar);
 
-		Receipt anotherReceipt = new Receipt();
+		Receipt anotherReceipt = new Receipt(UUID.randomUUID());
 
-		assertThat(parkingLot.unPark(anotherReceipt), not(theCar));
+		assertThat(parkingLot.unPark(anotherReceipt.getUuid()), not(theCar));
 	}
 
 
@@ -79,9 +81,9 @@ public class ParkingLotTest {
 	public void should_be_false_when_call_isFull_given_a_full_parking_lot_take_out_a_car() {
 		ParkingLot parkingLot = new ParkingLot(1);
 
-		Car theCar = new Car();
+		Car theCar = new Car("粤C99999");
 		Receipt receipt = parkingLot.park(theCar);
-		parkingLot.unPark(receipt);
+		parkingLot.unPark(receipt.getUuid());
 
 		assertThat(parkingLot.isFull(), is(false));
 	}
@@ -90,12 +92,12 @@ public class ParkingLotTest {
 	public void should_park_successfully_when_call_park_again_given_a_full_parking_lot_take_out_a_car() {
 		ParkingLot parkingLot = new ParkingLot(1);
 
-		Car theCar = new Car();
+		Car theCar = new Car("粤C99999");
 		Receipt receipt = parkingLot.park(theCar);
-		parkingLot.unPark(receipt);
+		parkingLot.unPark(receipt.getUuid());
 
 		try {
-			parkingLot.park(new Car());
+			parkingLot.park(new Car("粤C99999"));
 		} catch (ParkingLotFullException exception) {
 			fail("should park successfully");
 		}
