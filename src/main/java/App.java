@@ -20,7 +20,7 @@ public class App {
 
 	    ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
 
-	    ParkingController parkingController = new ParkingController(parkingBoy, new Request(),new Response());
+	    ParkingController parkingController = new ParkingController(parkingBoy);
 
 		Response response;
 		Request request = new Request();

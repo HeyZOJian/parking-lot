@@ -11,13 +11,11 @@ import View.Response;
 public class ParkingController {
 	private ParkingBoy parkingBoy;
 	private Request request;
-	private Response response;
+	private Response response = new Response();
 	private String command;
 
-	public ParkingController(ParkingBoy parkingBoy,Request request,Response response) {
+	public ParkingController(ParkingBoy parkingBoy) {
 		this.parkingBoy = parkingBoy;
-		this.request = request;
-		this.response = response;
 	}
 
 	public Response indexView() {
@@ -42,16 +40,18 @@ public class ParkingController {
 	public Response operation(Request request){
 		String parameter = request.getParameter();
 		if(command.equals("1")){
-			response = park(parameter);
+			Car car = new Car(parameter);
+			request.setObject(car);
+			response = park(request);
 		}
 		else if(command.equals("2")){
-			response = unpark(parameter);
+			response = unpark(request);
 		}
 		return response;
 	}
 
-	public Response park(String plateNumber) {
-		Car car = new Car(plateNumber);
+	public Response park(Request request) {
+		Car car = (Car) request.getObject();
 		try {
 			Receipt receipt = parkingBoy.park(car);
 			response.setResult("停车成功，您的小票是：\n" + receipt.getUuid());
@@ -61,7 +61,8 @@ public class ParkingController {
 		return response;
 	}
 
-	public Response unpark(String receiptNumber) {
+	public Response unpark(Request request) {
+		String receiptNumber = request.getParameter();
 		try {
 			Car car = parkingBoy.unPark(receiptNumber);
 			response.setResult("车已取出，您的车牌号是：" + car.getPlateNumber());
@@ -70,6 +71,5 @@ public class ParkingController {
 		}
 		return response;
 	}
-
 
 }

@@ -149,7 +149,7 @@ public class ParkingBoyTest {
         ParkingLot parkingLot1 = mock(ParkingLot.class);
         when(parkingLot1.isFull()).thenReturn(false);
         when(parkingLot1.park(car)).thenReturn(receipt1, receipt2);
-        when(parkingLot1.unPark(receipt1.getUuid().toString())).thenReturn(car,null);
+        when(parkingLot1.unPark(receipt1.getUuid())).thenReturn(car,null);
         List<ParkingLot> parkingLots = new ArrayList<>();
         parkingLots.add(parkingLot1);
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
