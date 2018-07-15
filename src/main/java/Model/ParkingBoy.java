@@ -1,10 +1,12 @@
 package Model;
 
+import Expection.AllParkingLotFullException;
 import Expection.ParkingLotFullException;
 import Expection.WrongReceiptException;
 
 import java.util.LinkedList;
 import java.util.List;
+import java.util.stream.Stream;
 
 /**
  * Created by Vito Zhuang on 7/12/2018.
@@ -22,16 +24,12 @@ public class ParkingBoy {
 	}
 
 	public Car unPark(String uuid) {
-		Car car = null;
 		for (ParkingLot parkingLot : parkingLots) {
-			car = parkingLot.unPark(uuid);
+			Car car = parkingLot.unPark(uuid);
 			if (car != null)
-				break;
+				return car;
 		}
-		if (car == null) {
-			throw new WrongReceiptException();
-		}
-		return car;
+		throw new WrongReceiptException();
 	}
 
 
@@ -40,6 +38,6 @@ public class ParkingBoy {
 			if (!parkingLot.isFull())
 				return parkingLot;
 		}
-		throw new ParkingLotFullException();
+		throw new AllParkingLotFullException();
 	}
 }
