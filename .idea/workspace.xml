@@ -5,7 +5,7 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/java/ParkingBoyTest.java" line="83" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7d30698d-5478-4ab6-b80b-2259f7cc2890" name="Default" comment="">
+    <list default="true" id="7d30698d-5478-4ab6-b80b-2259f7cc2890" name="Default" comment="the test of input command passed">
       <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/4.8.1/fileHashes/fileHashes.lock" afterDir="false" />
     </list>
@@ -30,7 +30,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/View/ParkingView.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+              <caret line="74" selection-start-line="74" selection-end-line="74" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -38,14 +38,27 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Request.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Request.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/View/Request.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="234">
-              <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="-72">
+              <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
               <folding>
                 <element signature="e#356#357#0" expanded="true" />
                 <element signature="e#412#413#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RequestTest.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/test/java/RequestTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="552">
+              <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+              <folding>
+                <element signature="n#!!doc" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -537,7 +550,10 @@
         <option value="$PROJECT_DIR$/src/main/java/Controller/ParkingController.java" />
         <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/ParkingView.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RequsetTest.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/src/main/java/View/Request.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RequestTest.java" />
       </list>
     </option>
   </component>
@@ -568,45 +584,6 @@
             <path>
               <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
               <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="View" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-            </path>
-            <path>
-              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
-              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -639,7 +616,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RequestTest">
+  <component name="RunManager" selected="JUnit.RequestTest.should_retur_receipt_number_when_input_receipt_number">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
     </configuration>
@@ -668,40 +645,6 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-lot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingBoyTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ParkingLotTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-lot" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingLotTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
     <configuration name="RequestTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
@@ -710,6 +653,40 @@
       <option name="MAIN_CLASS_NAME" value="RequestTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RequestTest.should_retur_plate_number_when_input_plate_number" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RequestTest" />
+      <option name="METHOD_NAME" value="should_retur_plate_number_when_input_plate_number" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RequestTest.should_retur_receipt_number_when_input_receipt_number" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RequestTest" />
+      <option name="METHOD_NAME" value="should_retur_receipt_number_when_input_receipt_number" />
+      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -758,19 +735,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParkingBoyTest" />
-      <item itemvalue="JUnit.ParkingLotTest" />
       <item itemvalue="Application.App" />
       <item itemvalue="JUnit.AppTest.shoule_return_input_platenumber_string_when_input_command_1" />
       <item itemvalue="JUnit.RequestTest" />
+      <item itemvalue="JUnit.RequestTest.should_retur_plate_number_when_input_plate_number" />
+      <item itemvalue="JUnit.RequestTest.should_retur_receipt_number_when_input_receipt_number" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RequestTest.should_retur_receipt_number_when_input_receipt_number" />
+        <item itemvalue="JUnit.RequestTest.should_retur_plate_number_when_input_plate_number" />
         <item itemvalue="JUnit.RequestTest" />
         <item itemvalue="JUnit.AppTest.shoule_return_input_platenumber_string_when_input_command_1" />
         <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.ParkingBoyTest" />
-        <item itemvalue="JUnit.ParkingLotTest" />
       </list>
     </recent_temporary>
   </component>
@@ -785,14 +762,11 @@
       <option name="presentableId" value="Default" />
       <updated>1531496927506</updated>
       <workItem from="1531496929066" duration="10802000" />
-      <workItem from="1531628642422" duration="77000" />
+      <workItem from="1531628642422" duration="745000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_shoule_return_input_platenumber_string_when_input_command_1 - 2018.07.14 at 16h 51m 04s.xml">
-      <configuration name="AppTest.shoule_return_input_platenumber_string_when_input_command_1" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="AppTest_shoule_return_input_platenumber_string_when_input_command_1 - 2018.07.14 at 16h 51m 19s.xml">
       <configuration name="AppTest.shoule_return_input_platenumber_string_when_input_command_1" configurationId="JUnit" />
     </history-entry>
@@ -820,21 +794,26 @@
     <history-entry file="AppTest_shoule_return_input_platenumber_string_when_input_command_1 - 2018.07.14 at 17h 07m 36s.xml">
       <configuration name="AppTest.shoule_return_input_platenumber_string_when_input_command_1" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RequestTest - 2018.07.15 at 12h 26m 33s.xml">
+      <configuration name="RequestTest" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10879000" />
+    <option name="totallyTimeSpent" value="11547000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3292683" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50106496" side_tool="true" weight="0.32935324" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.32935324" />
-      <window_info anchor="bottom" id="Version Control" order="7" visible="true" weight="0.3292683" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32935324" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.3292683" />
+      <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
+      <window_info anchor="bottom" id="Terminal" order="7" visible="true" weight="0.3292683" />
       <window_info id="Designer" order="2" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25349087" />
       <window_info anchor="bottom" id="Build" order="7" weight="0.31442785" />
@@ -847,7 +826,6 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.32935324" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="PlantUML" order="3" />
@@ -1078,20 +1056,38 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/View/ParkingView.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="74" lean-forward="true" selection-start-line="74" selection-end-line="74" />
+          <caret line="74" selection-start-line="74" selection-end-line="74" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="208">
+          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/View/Request.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="11" column="32" lean-forward="true" selection-start-line="11" selection-start-column="32" selection-end-line="11" selection-end-column="32" />
+        <state relative-caret-position="-72">
+          <caret line="8" column="30" selection-start-line="8" selection-start-column="30" selection-end-line="8" selection-end-column="30" />
           <folding>
             <element signature="e#356#357#0" expanded="true" />
             <element signature="e#412#413#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/RequestTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="55" column="60" selection-start-line="55" selection-start-column="60" selection-end-line="55" selection-end-column="60" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
