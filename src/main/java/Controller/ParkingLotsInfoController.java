@@ -11,6 +11,7 @@ public class ParkingLotsInfoController implements BaseController {
     private Request request;
     private Response response;
     private ParkingBoy parkingBoy;
+    private int parkCarNum;
 
     public ParkingLotsInfoController(Request request, Response response, ParkingBoy parkingBoy) {
         this.request = request;
@@ -25,18 +26,25 @@ public class ParkingLotsInfoController implements BaseController {
         return "forward:main";
     }
 
-    private String formateInfos(List<Map<String,String>> parkingLotsInfo) {
+    private String formateInfos(List<Map<String, String>> parkingLotsInfo) {
+        int parkSpaceNum = 0;
+        int parkCarNum = 0;
         String result = "|停车场ID|名称|车位|已停车辆|剩余车位|\n";
         result += "======================================\n";
-        for (Map<String,String> map:parkingLotsInfo){
+        for (Map<String, String> map : parkingLotsInfo) {
             result += String.format("|%s|%s|%s(个)|%s(辆)|%s(个)|\n",
                     map.get("id"),
                     map.get("name"),
                     map.get("capacity"),
                     map.get("parkNum"),
                     map.get("remainNum"));
+            parkSpaceNum += Integer.parseInt(map.get("capacity"));
+            parkCarNum += Integer.parseInt(map.get("parkNum"));
         }
-        return result;
+
+        return result + String.format("\n总车位：%s(个)\n" +
+                "停车总量：%s（辆）\n" +
+                "总剩余车位：%s（个）", parkSpaceNum, parkCarNum, parkSpaceNum - parkCarNum);
     }
 }
 
