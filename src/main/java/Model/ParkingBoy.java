@@ -40,4 +40,12 @@ public class ParkingBoy {
 		}
 		throw new AllParkingLotFullException();
 	}
+
+	public boolean isAllParkingLotFull() {
+		for (ParkingLot parkingLot : parkingLots){
+			if(!parkingLot.isFull())
+				return false;
+		}
+		return true;
+	}
 }

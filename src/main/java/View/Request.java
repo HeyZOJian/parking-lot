@@ -25,9 +25,4 @@ public class Request {
 	public void setParameter(String parameter) {
 		this.parameter = parameter;
 	}
-
-	public String input() {
-		Scanner scanner = new Scanner(System.in);
-		return scanner.next();
-	}
 }

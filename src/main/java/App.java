@@ -1,6 +1,7 @@
 import Controller.ParkingController;
 import Model.ParkingBoy;
 import Model.ParkingLot;
+import View.CLI;
 import View.Request;
 import View.Response;
 
@@ -25,21 +26,13 @@ public class App {
 		Response response;
 		Request request = new Request();
 
-		Scanner scanner = new Scanner(System.in);
-
+	    CLI cli = new CLI();
+		Router router = new Router(parkingController);
+		router.handleRequest(null);
 		while (true){
-			response = parkingController.indexView();
-			System.out.println(response.getResult());
-
-			String command = scanner.next();
+			String command = cli.input();
 			request.setParameter(command);
-			response = parkingController.inputCommand(request);
-			System.out.println(response.getResult());
-
-			String parameter = scanner.next();
-			request.setParameter(parameter);
-			response = parkingController.operation(request);
-			System.out.println(response.getResult());
+			router.handleRequest(request);
 		}
     }
 }
