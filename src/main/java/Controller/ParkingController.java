@@ -1,6 +1,6 @@
 package Controller;
 
-import Expection.WrongReceiptException;
+import Exception.WrongReceiptException;
 import Model.Car;
 import Model.ParkingBoy;
 import Model.Receipt;

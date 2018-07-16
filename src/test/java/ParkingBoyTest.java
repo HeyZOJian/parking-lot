@@ -19,7 +19,7 @@ public class ParkingBoyTest {
     public void should_park_successfully_when_park_is_not_full_given_one_park() {
         ParkingLot parkingLot1 = mock(ParkingLot.class);
         when(parkingLot1.isFull()).thenReturn(false);
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
         parkingBoy.addParkingLot("西南停车场", 1);
         Car car = new Car("粤C99999");
@@ -41,7 +41,7 @@ public class ParkingBoyTest {
         when(parkingLot.park(car)).thenReturn(receipt);
         when(parkingLot.unPark(receipt.getUuid())).thenReturn(car);
 
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot);
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
 
@@ -57,7 +57,7 @@ public class ParkingBoyTest {
         ParkingLot parkingLot2 = mock(ParkingLot.class);
         when(parkingLot1.isFull()).thenReturn(false);
         when(parkingLot2.isFull()).thenReturn(false);
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot1);
 	    parkingLots.put(2,parkingLot2);
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
@@ -82,7 +82,7 @@ public class ParkingBoyTest {
         when(parkingLot1.park(car)).thenReturn(receipt);
         when(parkingLot1.unPark(receipt.getUuid())).thenReturn(car);
 
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot1);
 	    parkingLots.put(2,parkingLot2);
 
@@ -109,7 +109,7 @@ public class ParkingBoyTest {
         when(parkingLot1.park(car1)).thenReturn(receipt1);
         when(parkingLot2.park(car2)).thenReturn(receipt2);
 
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot1);
 	    parkingLots.put(2,parkingLot2);
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
@@ -127,7 +127,7 @@ public class ParkingBoyTest {
         ParkingLot parkingLot2 = mock(ParkingLot.class);
         when(parkingLot1.isFull()).thenReturn(true);
         when(parkingLot2.isFull()).thenReturn(true);
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot1);
 	    parkingLots.put(2,parkingLot2);
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
@@ -149,7 +149,7 @@ public class ParkingBoyTest {
         when(parkingLot1.isFull()).thenReturn(false);
         when(parkingLot1.park(car)).thenReturn(receipt1, receipt2);
         when(parkingLot1.unPark(receipt1.getUuid())).thenReturn(car,null);
-        Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+        Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot1);
         ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
 
@@ -164,7 +164,7 @@ public class ParkingBoyTest {
     
     @Test
     public void should_return_success_when_add_new_parkingLot_given_new_parkingLot_name_and_size (){
-        Map<Integer, ParkingLot> parkingLots = mock(HashMap.class);
+        Map<Integer, ParkingLot> parkingLots = mock(TreeMap.class);
     	ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
     	parkingBoy.addParkingLot("西南停车场",1);
     	verify(parkingLots).put(anyInt(),any(ParkingLot.class));
@@ -173,7 +173,7 @@ public class ParkingBoyTest {
     @Test
     public void should_return_success_when_delete_a_parkinglot_given_a_existing_parkinglot_id (){
         ParkingLot parkingLot = new ParkingLot("西南停车场",1);
-    	Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+    	Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,parkingLot);
     	ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
     	ParkingLot delParkingLot = parkingBoy.deleteParkingLotById("001");
@@ -182,7 +182,7 @@ public class ParkingBoyTest {
 
 	@Test
 	public void should_return_failed_when_delete_a_parkinglot_given_a_no_existing_parkinglot_id (){
-		Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+		Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 		ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
 		try{
 		ParkingLot delParkingLot = parkingBoy.deleteParkingLotById("001");
@@ -194,7 +194,7 @@ public class ParkingBoyTest {
 
     @Test
     public void should_return_failed_when_delete_a_parkinglot_given_a_still_parking_car_parkinglot_id (){
-	    Map<Integer, ParkingLot> parkingLots = new HashMap<>();
+	    Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
 	    parkingLots.put(1,new ParkingLot("西南停车场",1));
 	    ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
         parkingBoy.park(new Car("1234"));
@@ -204,5 +204,19 @@ public class ParkingBoyTest {
         }catch (ParkingLotNoEmptyException e){
 
         }
+    }
+
+    @Test
+    public void should_return_all_manage_parkinglot_info (){
+	    Map<Integer, ParkingLot> parkingLots = new TreeMap<>();
+	    parkingLots.put(1,new ParkingLot("西南停车场",1));
+	    ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+		List<Map<String,String>> allInfo = parkingBoy.getParkingLotsInfo();
+		Map<String,String> parkingLotInfo = allInfo.get(0);
+		assertThat(parkingLotInfo.get("Id"),is("001"));
+		assertThat(parkingLotInfo.get("Name"),is("西南停车场"));
+		assertThat(parkingLotInfo.get("Capacity"),is("1"));
+		assertThat(parkingLotInfo.get("ParkNum"),is("0"));
+		assertThat(parkingLotInfo.get("RemainNum"),is("1"));
     }
 }

@@ -1,6 +1,6 @@
 package Model;
 
-import Expection.ParkingLotFullException;
+import Exception.ParkingLotFullException;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -10,10 +10,12 @@ import java.util.UUID;
  * Created by Vito Zhuang on 7/11/2018.
  */
 public class ParkingLot {
+	private String name;
 	private int capacity;
 	private Map<String, Car> parkSpaces = new HashMap<>();
 
-	public ParkingLot(int capacity) {
+	public ParkingLot(String name, int capacity) {
+		this.name = name;
 		this.capacity = capacity;
 	}
 
@@ -21,7 +23,7 @@ public class ParkingLot {
 		if(isFull()) throw new ParkingLotFullException();
 		else{
 			Receipt receipt = new Receipt(UUID.randomUUID());
-			parkSpaces.put(receipt.getUuid().toString(),car);
+			parkSpaces.put(receipt.getUuid(),car);
 			return receipt;
 		}
 	}
@@ -32,5 +34,17 @@ public class ParkingLot {
 
 	public Car unPark(String uuid) {
 		return this.parkSpaces.remove(uuid);
+	}
+
+	public int parkCarCount(){
+		return parkSpaces.entrySet().size();
+	}
+
+	public String getName() {
+		return name;
+	}
+
+	public int getCapacity() {
+		return capacity;
 	}
 }

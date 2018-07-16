@@ -1,4 +1,4 @@
-package Expection;
+package Exception;
 
 /**
  * Created by Vito Zhuang on 7/11/2018.
