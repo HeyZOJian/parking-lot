@@ -9,7 +9,7 @@ public class Router {
 	public static final String MAINPAGE = "main";
 	public static final String PARKPAGE = "park";
 	public static final String UNPARKPAGE = "unpark";
-	
+
 	private String currentPage;
 	private ParkingController controller;
 	private Response response;
@@ -20,7 +20,8 @@ public class Router {
 		this.currentPage = MAINPAGE;
 	}
 
-	public void getIndexView(){
+	public void getIndexView() {
+		currentPage = MAINPAGE;
 		response.send("1. 停车\n" +
 				"2. 取车 \n" +
 				"请输入您要进行的操作：");
@@ -28,7 +29,7 @@ public class Router {
 
 	public void handleRequest(Request request) {
 
-		switch (currentPage){
+		switch (currentPage) {
 			case MAINPAGE:
 				main(request);
 				break;
@@ -42,31 +43,27 @@ public class Router {
 	}
 
 	private void main(Request request) {
+		switch (request.getParameter()) {
+			case "1":
+				currentPage = PARKPAGE;
+				parkView();
 
-			switch (request.getParameter()){
-				case "1":
-					currentPage = PARKPAGE;
-					parkView();
-
-					break;
-				case "2":
-					currentPage = UNPARKPAGE;
-					unparkView();
-					break;
-				default:
-					response.send("非法指令，请查证后再输");
-					getIndexView();
-			}
-
+				break;
+			case "2":
+				currentPage = UNPARKPAGE;
+				unparkView();
+				break;
+			default:
+				response.send("非法指令，请查证后再输");
+				getIndexView();
+		}
 	}
 
 	private void parkView() {
-		if(controller.isAllParkingLotFull()){
+		if (controller.isAllParkingLotFull()) {
 			response.send("车已停满，请晚点再来");
-			currentPage = MAINPAGE;
 			getIndexView();
-		}
-		else{
+		} else {
 			response.send("请输入车牌号：");
 		}
 	}
@@ -75,15 +72,13 @@ public class Router {
 		response.send("请输入小票编号：");
 	}
 
-	private void park(Request request){
+	private void park(Request request) {
 		controller.park(request);
-		currentPage = MAINPAGE;
 		getIndexView();
 	}
 
-	private void unpark(Request request){
+	private void unpark(Request request) {
 		controller.unpark(request);
-		currentPage = MAINPAGE;
 		getIndexView();
 	}
 }

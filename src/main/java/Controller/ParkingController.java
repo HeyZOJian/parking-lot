@@ -17,10 +17,9 @@ public class ParkingController {
 	}
 
 
-	public Response park(Request request) {
+	public void park(Request request) {
 		Receipt receipt = parkingBoy.park(new Car(request.getParameter()));
 		response.send("停车成功，您的小票是：\n" + receipt.getUuid());
-		return response;
 	}
 
 	public Response unpark(Request request) {
