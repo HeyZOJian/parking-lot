@@ -7,23 +7,19 @@ import View.Response;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.util.ArrayList;
-import java.util.HashMap;
+import java.util.LinkedList;
 import java.util.List;
-import java.util.Map;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.MatcherAssert.assertThat;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
-import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by Vito Zhuang on 7/16/2018.
  */
 public class RouterTest {
 	private ParkingLot parkingLot;
-	private Map<Integer, ParkingLot> parkingLots;
+	private List<ParkingLot> parkingLots;
 	private ParkingBoy parkingBoy;
 	private ParkingController parkingController;
 	private Request request;
@@ -31,9 +27,9 @@ public class RouterTest {
 	private Router router;
 	@Before
 	public void init(){
-		parkingLot = new ParkingLot("西南停车场", 1);
-		parkingLots = new HashMap<>();
-		parkingLots.put(1,parkingLot);
+		parkingLot = new ParkingLot(1,"西南停车场", 1);
+		parkingLots = new LinkedList<>();
+		parkingLots.add(parkingLot);
 		parkingBoy = new ParkingBoy(parkingLots);
 		parkingController = mock(ParkingController.class);
 		request = mock(Request.class);
