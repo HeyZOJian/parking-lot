@@ -8,16 +8,6 @@ import java.util.Scanner;
 public class Request {
 	private String parameter;
 
-	private Object object;
-
-	public Object getObject() {
-		return object;
-	}
-
-	public void setObject(Object object) {
-		this.object = object;
-	}
-
 	public String getParameter() {
 		return parameter;
 	}

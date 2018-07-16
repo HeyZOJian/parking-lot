@@ -6,27 +6,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7d30698d-5478-4ab6-b80b-2259f7cc2890" name="Default" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/Router.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/View/CLI.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/RouterTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/Controller/ParkingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/Controller/ParkingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/Model/ParkingBoy.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/Model/ParkingBoy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/View/ParkingView.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/main/View/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/main/View/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test/AppTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/AppTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test/ParkingBoyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/test/ParkingBoyTest.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/bin/test/RequestTest.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/App.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/classes/Controller/ParkingController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Controller/ParkingController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Model/ParkingBoy.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/Model/ParkingBoy.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/View/Request.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/View/Request.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/test/classes/ParkingBoyTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/test/classes/ParkingBoyTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Controller/ParkingController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/ParkingController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Model/ParkingBoy.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Model/ParkingBoy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/Router.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Controller/Router.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/View/Request.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Request.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/View/Response.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/View/Response.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/ParkingControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/ParkingControllerTest.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -39,6 +27,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/parking_lot$RouterTest.ic" NAME="RouterTest Coverage Results" MODIFIED="1531727315276" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
     <SUITE FILE_PATH="coverage/parking_lot$ParkingControllerTest.ic" NAME="ParkingControllerTest Coverage Results" MODIFIED="1531643424381" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
   <component name="ExternalProjectsData">
@@ -47,20 +36,40 @@
     </projectState>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Router.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Router.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="416">
-              <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.4671875">
+      <split-first>
+        <leaf>
+          <file leaf-file-name="ParkingController.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ParkingController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="467">
+                  <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file leaf-file-name="RouterTest.java" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/test/java/RouterTest.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="965">
+                  <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -490,18 +499,20 @@
         <option value="$PROJECT_DIR$/src/test/java/AppTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/RequestTest.java" />
         <option value="$PROJECT_DIR$/src/test/java/ParkingBoyTest.java" />
-        <option value="$PROJECT_DIR$/src/test/java/ParkingControllerTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/Model/ParkingLot.java" />
         <option value="$PROJECT_DIR$/src/main/java/Expection/AllParkingLotFullException.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/Response.java" />
         <option value="$PROJECT_DIR$/src/main/java/View/CLI.java" />
-        <option value="$PROJECT_DIR$/src/main/java/View/Request.java" />
         <option value="$PROJECT_DIR$/src/main/java/Static.java" />
         <option value="$PROJECT_DIR$/src/main/java/static" />
         <option value="$PROJECT_DIR$/src/main/java/Model/ParkingBoy.java" />
-        <option value="$PROJECT_DIR$/src/main/java/App.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Controller/ParkingController.java" />
         <option value="$PROJECT_DIR$/src/main/java/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/ParkingController.java" />
+        <option value="$PROJECT_DIR$/src/test/java/ParkingControllerTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/App.java" />
+        <option value="$PROJECT_DIR$/src/main/java/Controller/Router.java" />
+        <option value="$PROJECT_DIR$/src/main/java/View/Request.java" />
+        <option value="$PROJECT_DIR$/src/test/java/RouterTest.java" />
       </list>
     </option>
   </component>
@@ -554,6 +565,19 @@
               <item name="main" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="parking-lot" type="b2602c69:ProjectViewProjectNode" />
+              <item name="parking-lot" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -573,7 +597,7 @@
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors.Java" />
+    <property name="settings.editor.selected.configurable" value="debugger.dataViews" />
   </component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
@@ -592,24 +616,19 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.App">
+  <component name="RunManager" selected="JUnit.RouterTest">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-    </configuration>
-    <configuration name="App" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="App" />
-      <module name="parking-lot_main" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
-    <configuration name="ParkingBoyTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RouterTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingBoyTest" />
+      <option name="MAIN_CLASS_NAME" value="RouterTest" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
@@ -621,30 +640,13 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingControllerTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RouterTest.should_return_main_page_when_park_failed" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingControllerTest" />
-      <option name="METHOD_NAME" />
-      <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="ParkingControllerTest.should_return_car_platenumber_when_receipt_number_is_right_given_receipt_number" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="parking-lot_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingControllerTest" />
-      <option name="METHOD_NAME" value="should_return_car_platenumber_when_receipt_number_is_right_given_receipt_number" />
+      <option name="MAIN_CLASS_NAME" value="RouterTest" />
+      <option name="METHOD_NAME" value="should_return_main_page_when_park_failed" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -655,13 +657,47 @@
       </option>
       <patterns />
     </configuration>
-    <configuration name="ParkingControllerTest.should_return_error_receipt_when_receipt_number_is_wrong_given_receipt_number" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="RouterTest.should_return_main_page_when_park_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="parking-lot_test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="ParkingControllerTest" />
-      <option name="METHOD_NAME" value="should_return_error_receipt_when_receipt_number_is_wrong_given_receipt_number" />
+      <option name="MAIN_CLASS_NAME" value="RouterTest" />
+      <option name="METHOD_NAME" value="should_return_main_page_when_park_successfully" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RouterTest.should_return_main_page_when_router_get_main_page" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RouterTest" />
+      <option name="METHOD_NAME" value="should_return_main_page_when_router_get_main_page" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="parking-lot_test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="RouterTest" />
+      <option name="METHOD_NAME" value="should_return_main_page_when_unpark_successfully" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -711,19 +747,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.ParkingControllerTest.should_return_car_platenumber_when_receipt_number_is_right_given_receipt_number" />
-      <item itemvalue="JUnit.ParkingControllerTest.should_return_error_receipt_when_receipt_number_is_wrong_given_receipt_number" />
-      <item itemvalue="JUnit.ParkingControllerTest" />
-      <item itemvalue="JUnit.ParkingBoyTest" />
-      <item itemvalue="Application.App" />
+      <item itemvalue="JUnit.RouterTest" />
+      <item itemvalue="JUnit.RouterTest.should_return_main_page_when_park_successfully" />
+      <item itemvalue="JUnit.RouterTest.should_return_main_page_when_park_failed" />
+      <item itemvalue="JUnit.RouterTest.should_return_main_page_when_router_get_main_page" />
+      <item itemvalue="JUnit.RouterTest.should_return_main_page_when_unpark_successfully" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.App" />
-        <item itemvalue="JUnit.ParkingBoyTest" />
-        <item itemvalue="JUnit.ParkingControllerTest" />
-        <item itemvalue="JUnit.ParkingControllerTest.should_return_error_receipt_when_receipt_number_is_wrong_given_receipt_number" />
-        <item itemvalue="JUnit.ParkingControllerTest.should_return_car_platenumber_when_receipt_number_is_right_given_receipt_number" />
+        <item itemvalue="JUnit.RouterTest" />
+        <item itemvalue="JUnit.RouterTest.should_return_main_page_when_park_failed" />
+        <item itemvalue="JUnit.RouterTest.should_return_main_page_when_unpark_successfully" />
+        <item itemvalue="JUnit.RouterTest.should_return_main_page_when_router_get_main_page" />
+        <item itemvalue="JUnit.RouterTest.should_return_main_page_when_park_successfully" />
       </list>
     </recent_temporary>
   </component>
@@ -741,7 +777,7 @@
       <workItem from="1531628642422" duration="16128000" />
       <workItem from="1531703250349" duration="3244000" />
       <workItem from="1531708671283" duration="150000" />
-      <workItem from="1531708837121" duration="3490000" />
+      <workItem from="1531708837121" duration="14628000" />
     </task>
     <task id="LOCAL-00001" summary="the test of input plate number and receipt number passed">
       <created>1531629494988</created>
@@ -754,53 +790,54 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="ParkingControllerTest_should_return_error_receipt_when_receipt_number_is_wrong_given_receipt_number - 2018.07.15 at 16h 29m 38s.xml">
-      <configuration name="ParkingControllerTest.should_return_error_receipt_when_receipt_number_is_wrong_given_receipt_number" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_unpark_successfully - 2018.07.16 at 15h 38m 29s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingControllerTest - 2018.07.15 at 16h 29m 45s.xml">
-      <configuration name="ParkingControllerTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_unpark_successfully - 2018.07.16 at 15h 39m 05s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingControllerTest - 2018.07.15 at 16h 29m 49s.xml">
-      <configuration name="ParkingControllerTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_unpark_successfully - 2018.07.16 at 15h 39m 54s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingControllerTest - 2018.07.15 at 16h 30m 27s.xml">
-      <configuration name="ParkingControllerTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_unpark_successfully - 2018.07.16 at 15h 42m 05s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyTest - 2018.07.15 at 16h 43m 50s.xml">
-      <configuration name="ParkingBoyTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_unpark_successfully - 2018.07.16 at 15h 42m 36s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyTest - 2018.07.15 at 16h 46m 01s.xml">
-      <configuration name="ParkingBoyTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_unpark_successfully - 2018.07.16 at 15h 42m 44s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_unpark_successfully" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyTest - 2018.07.15 at 16h 46m 40s.xml">
-      <configuration name="ParkingBoyTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_park_failed - 2018.07.16 at 15h 44m 01s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_park_failed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyTest - 2018.07.15 at 16h 49m 34s.xml">
-      <configuration name="ParkingBoyTest" configurationId="JUnit" />
+    <history-entry file="RouterTest_should_return_main_page_when_park_failed - 2018.07.16 at 15h 44m 25s.xml">
+      <configuration name="RouterTest.should_return_main_page_when_park_failed" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyTest - 2018.07.15 at 16h 50m 16s.xml">
-      <configuration name="ParkingBoyTest" configurationId="JUnit" />
+    <history-entry file="RouterTest - 2018.07.16 at 15h 45m 37s.xml">
+      <configuration name="RouterTest" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="ParkingBoyTest - 2018.07.15 at 16h 51m 56s.xml">
-      <configuration name="ParkingBoyTest" configurationId="JUnit" />
+    <history-entry file="RouterTest - 2018.07.16 at 15h 48m 38s.xml">
+      <configuration name="RouterTest" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33814000" />
+    <option name="totallyTimeSpent" value="44952000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1920" height="1080" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.3292683" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.3287037" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" sideWeight="0.50106496" side_tool="true" weight="0.32935324" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3292683" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49893504" visible="true" weight="0.35925925" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32852387" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49893504" weight="0.35925925" />
+      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.3296875" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32777777" />
       <window_info id="Designer" order="2" />
       <window_info content_ui="combo" id="Project" order="0" weight="0.16770834" />
       <window_info anchor="right" id="Database" order="3" />
@@ -809,12 +846,11 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" weight="0.39939025" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.49946752" weight="0.41759259" />
       <window_info id="UI Designer" order="2" />
       <window_info anchor="right" id="Commander" order="0" weight="0.4" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info id="Image Layers" order="2" />
-      <window_info anchor="right" id="Coverage" order="4" side_tool="true" weight="0.32975295" />
       <window_info anchor="right" x="0" y="0" width="430" height="880" id="Documentation" order="3" side_tool="true" weight="0.32960597" />
       <window_info anchor="right" id="PlantUML" order="3" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
@@ -866,32 +902,10 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="21" />
+      <option name="time" value="27" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" selection-start-line="13" selection-end-line="13" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="312">
-          <caret line="12" column="31" selection-start-line="12" selection-start-column="31" selection-end-line="12" selection-end-column="31" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/ParkingLot.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -1101,33 +1115,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="327" selection-start-line="327" selection-end-line="327" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/RequestTest.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/View/ParkingView.java" />
     <entry file="file://$PROJECT_DIR$/src/test/java/ParkingLotTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ParkingControllerTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="389">
-          <caret line="85" column="76" lean-forward="true" selection-start-line="85" selection-start-column="76" selection-end-line="85" selection-end-column="76" />
         </state>
       </provider>
     </entry>
@@ -1138,53 +1131,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ParkingLot.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="47">
-          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Response.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding>
-            <element signature="e#120#121#0" expanded="true" />
-            <element signature="e#147#148#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/View/CLI.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="320">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/View/Request.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="640">
-          <caret line="26" column="5" selection-start-line="26" selection-start-column="5" selection-end-line="26" selection-end-column="5" />
-          <folding>
-            <element signature="e#193#194#0" expanded="true" />
-            <element signature="e#213#214#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,39 +1152,114 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="36" column="5" lean-forward="true" selection-start-line="36" selection-start-column="5" selection-end-line="36" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
+        <state relative-caret-position="192">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Model/ParkingBoy.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="311">
-          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        <state relative-caret-position="384">
+          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Model/ParkingLot.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="11" column="24" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Response.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="7" column="36" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding>
+            <element signature="e#120#121#0" expanded="true" />
+            <element signature="e#154#155#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ParkingBoyTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4032">
+          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/2.19.0/c7a731fe218c6202c74cc79656bcb8f3bd4dc539/mockito-core-2.19.0-sources.jar!/org/mockito/internal/creation/bytebuddy/MockMethodInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="472">
+          <caret line="112" column="30" lean-forward="true" selection-start-line="112" selection-start-column="30" selection-end-line="112" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/internal/runners/model/ReflectiveCallable.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="13" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/junit/junit/4.12/a6c32b40bf3d76eca54e3c601e5d1470c86fcdfa/junit-4.12-sources.jar!/org/junit/runners/ParentRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="416">
+          <caret line="334" column="7" lean-forward="true" selection-start-line="334" selection-start-column="7" selection-end-line="334" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/ParkingControllerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="467">
+          <caret line="27" column="28" lean-forward="true" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Controller/Router.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="31" column="26" lean-forward="true" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/View/Request.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="8" column="29" selection-start-line="8" selection-start-column="29" selection-end-line="8" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Controller/ParkingController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="19" column="43" selection-start-line="19" selection-start-column="43" selection-end-line="19" selection-end-column="43" />
+        <state relative-caret-position="467">
+          <caret line="65" column="23" lean-forward="true" selection-start-line="65" selection-start-column="23" selection-end-line="65" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#954#955#0" expanded="true" />
-            <element signature="e#1000#1001#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Router.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/RouterTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="416">
-          <caret line="55" column="49" selection-start-line="55" selection-start-column="49" selection-end-line="55" selection-end-column="49" />
+        <state relative-caret-position="965">
+          <caret line="123" column="1" lean-forward="true" selection-start-line="123" selection-start-column="1" selection-end-line="123" selection-end-column="1" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
