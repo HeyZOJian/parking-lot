@@ -55,6 +55,7 @@ public class Router {
 					break;
 				default:
 					response.send("非法指令，请查证后再输");
+					getIndexView();
 			}
 
 	}
@@ -63,7 +64,7 @@ public class Router {
 		if(controller.isAllParkingLotFull()){
 			response.send("车已停满，请晚点再来");
 			currentPage = MAINPAGE;
-//			main(null);
+			getIndexView();
 		}
 		else{
 			response.send("请输入车牌号：");
@@ -77,12 +78,12 @@ public class Router {
 	private void park(Request request){
 		controller.park(request);
 		currentPage = MAINPAGE;
-//		main(null);
+		getIndexView();
 	}
 
 	private void unpark(Request request){
 		controller.unpark(request);
 		currentPage = MAINPAGE;
-//		main(null);
+		getIndexView();
 	}
 }
