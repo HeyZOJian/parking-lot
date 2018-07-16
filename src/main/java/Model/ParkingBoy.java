@@ -15,10 +15,11 @@ import java.util.Map;
  */
 public class ParkingBoy {
     private List<ParkingLot> parkingLots;
-    private int idRecord = 1;
+    private int idRecord;
 
     public ParkingBoy(List<ParkingLot> parkingLots) {
         this.parkingLots = parkingLots;
+        idRecord = parkingLots.size();
     }
 
     public Receipt park(Car car) {
@@ -46,17 +47,20 @@ public class ParkingBoy {
 
     public boolean isAllParkingLotFull() {
         return parkingLots.stream()
-                .allMatch(parkingLot -> !parkingLot.isFull());
+                .allMatch(parkingLot -> parkingLot.isFull());
     }
 
     public void addParkingLot(String name, int size) {
+        idRecord++;
         parkingLots.add(new ParkingLot(idRecord, name, size));
+
     }
 
     public boolean deleteParkingLotById(String id) {
         ParkingLot parkingLot = getParkingLotById(id);
         if (parkingLot != null) {
             if (parkingLot.getParkNum() == 0) {
+                parkingLots.remove(parkingLot);
                 return true;
             }
             throw new ParkingLotNoEmptyException();

@@ -1,5 +1,4 @@
-import Controller.ParkingController;
-import Controller.Router;
+import Controller.*;
 import Model.ParkingBoy;
 import Model.ParkingLot;
 import View.CLI;
@@ -17,20 +16,37 @@ public class App {
 	    List<ParkingLot> parkingLots = new LinkedList<>();
 		parkingLots.add(new ParkingLot(1,"西南停车场",1));
 	    ParkingBoy parkingBoy = new ParkingBoy(parkingLots);
+        Request request = new Request();
+        Response response = new Response();
 
-	    ParkingController parkingController = new ParkingController(parkingBoy);
 
-		Request request = new Request();
-	    Response response = new Response();
 
 	    CLI cli = new CLI();
-		Router router = new Router(parkingController);
-		router.getIndexView(response);
+		Router router = new Router();
+
+		router.registerRouter("main", new MainController(request,response));
+        router.registerRouter("main/*",new ErrorController(request,response));
+        router.registerRouter("main/",new MainController(request,response));
+        router.registerRouter("main/1",new ServerMainController(request,response));
+		router.registerRouter("main/1/1",new GoToParkPageController(request,response,parkingBoy));
+		router.registerRouter("main/1/1/*",new ParkController(request,response,parkingBoy));
+		router.registerRouter("main/1/2",new GoToUnparkController(request,response,parkingBoy));
+		router.registerRouter("main/1/2/*", new UnparkController(request,response,parkingBoy));
+        router.registerRouter("main/2",new ManageMainController(request,response));
+        router.registerRouter("main/2/1",new ParkingLotsInfoController(request,response,parkingBoy));
+        router.registerRouter("main/2/2",new GoToAddParkinglotPageController(request,response));
+        router.registerRouter("main/2/2/*",new AddParkinglotController(request,response,parkingBoy));
+        router.registerRouter("main/2/3",new GoToDeleteParkinglotController(request,response,parkingBoy));
+        router.registerRouter("main/2/3/*",new DeleteParkingController(request,response,parkingBoy));
+
+
+
+        router.launch();
 
 		while (true){
 			String command = cli.input();
 			request.setParameter(command);
-			router.handleRequest(request,response);
+			router.handleRequest(request);
 		}
     }
 }
