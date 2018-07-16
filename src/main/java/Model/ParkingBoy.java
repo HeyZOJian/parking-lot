@@ -1,20 +1,21 @@
 package Model;
 
-import Expection.AllParkingLotFullException;
-import Expection.ParkingLotFullException;
-import Expection.WrongReceiptException;
+import Exception.AllParkingLotFullException;
+import Exception.ParkingLotNoEmptyException;
+import Exception.WrongReceiptException;
+import Exception.ParkingLotNoExistException;
 
-import java.util.LinkedList;
 import java.util.List;
-import java.util.stream.Stream;
+import java.util.Map;
 
 /**
  * Created by Vito Zhuang on 7/12/2018.
  */
 public class ParkingBoy {
-	private List<ParkingLot> parkingLots = new LinkedList<>();
+	private int idRecoder = 1;
+	private Map<Integer, ParkingLot> parkingLots;
 
-	public ParkingBoy(List<ParkingLot> parkingLots) {
+	public ParkingBoy(Map<Integer, ParkingLot> parkingLots) {
 		this.parkingLots = parkingLots;
 	}
 
@@ -24,7 +25,7 @@ public class ParkingBoy {
 	}
 
 	public Car unPark(String uuid) {
-		for (ParkingLot parkingLot : parkingLots) {
+		for (ParkingLot parkingLot : parkingLots.values()) {
 			Car car = parkingLot.unPark(uuid);
 			if (car != null)
 				return car;
@@ -34,7 +35,7 @@ public class ParkingBoy {
 
 
 	public ParkingLot getParkingLotHaveRemainSpace() {
-		for (ParkingLot parkingLot : parkingLots) {
+		for (ParkingLot parkingLot : parkingLots.values()) {
 			if (!parkingLot.isFull())
 				return parkingLot;
 		}
@@ -42,10 +43,28 @@ public class ParkingBoy {
 	}
 
 	public boolean isAllParkingLotFull() {
-		for (ParkingLot parkingLot : parkingLots){
-			if(!parkingLot.isFull())
+		for (ParkingLot parkingLot : parkingLots.values()) {
+			if (!parkingLot.isFull())
 				return false;
 		}
 		return true;
+	}
+
+	public void addParkingLot(String name, int size) {
+		parkingLots.put(idRecoder, new ParkingLot(name, size));
+		idRecoder++;
+	}
+
+	public ParkingLot deleteParkingLotById(String Id) {
+		ParkingLot parkingLot = parkingLots.remove(Integer.parseInt(Id));
+		if (parkingLot != null) {
+			if (parkingLot.parkCarCount() == 0) {
+				return parkingLot;
+			} else {
+				throw new ParkingLotNoEmptyException();
+			}
+		} else {
+			throw new ParkingLotNoExistException();
+		}
 	}
 }
