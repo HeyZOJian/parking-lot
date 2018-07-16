@@ -23,12 +23,12 @@ public class App {
 
 	    ParkingController parkingController = new ParkingController(parkingBoy);
 
-		Response response;
 		Request request = new Request();
 
 	    CLI cli = new CLI();
 		Router router = new Router(parkingController);
-		router.handleRequest(null);
+		router.getIndexView();
+
 		while (true){
 			String command = cli.input();
 			request.setParameter(command);

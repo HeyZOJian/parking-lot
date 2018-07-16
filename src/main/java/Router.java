@@ -20,6 +20,12 @@ public class Router {
 		this.currentPage = MAINPAGE;
 	}
 
+	public void getIndexView(){
+		response.send("1. 停车\n" +
+				"2. 取车 \n" +
+				"请输入您要进行的操作：");
+	}
+
 	public void handleRequest(Request request) {
 
 		switch (currentPage){
@@ -36,12 +42,7 @@ public class Router {
 	}
 
 	private void main(Request request) {
-		if(request==null) {
-			response.send("1. 停车\n" +
-					"2. 取车 \n" +
-					"请输入您要进行的操作：");
-		}
-		else{
+
 			switch (request.getParameter()){
 				case "1":
 					currentPage = PARKPAGE;
@@ -55,14 +56,14 @@ public class Router {
 				default:
 					response.send("非法指令，请查证后再输");
 			}
-		}
+
 	}
 
 	private void parkView() {
 		if(controller.isAllParkingLotFull()){
 			response.send("车已停满，请晚点再来");
 			currentPage = MAINPAGE;
-			main(null);
+//			main(null);
 		}
 		else{
 			response.send("请输入车牌号：");
@@ -76,12 +77,12 @@ public class Router {
 	private void park(Request request){
 		controller.park(request);
 		currentPage = MAINPAGE;
-		main(null);
+//		main(null);
 	}
 
 	private void unpark(Request request){
 		controller.unpark(request);
 		currentPage = MAINPAGE;
-		main(null);
+//		main(null);
 	}
 }
